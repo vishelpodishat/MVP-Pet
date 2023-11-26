@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		162268822B133CBC00BCE77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268812B133CBC00BCE77B /* AppDelegate.swift */; };
 		162268842B133CBC00BCE77B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268832B133CBC00BCE77B /* SceneDelegate.swift */; };
-		162268862B133CBC00BCE77B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268852B133CBC00BCE77B /* ViewController.swift */; };
-		162268892B133CBC00BCE77B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 162268872B133CBC00BCE77B /* Main.storyboard */; };
+		162268862B133CBC00BCE77B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268852B133CBC00BCE77B /* MainViewController.swift */; };
 		1622688B2B133CBE00BCE77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1622688A2B133CBE00BCE77B /* Assets.xcassets */; };
 		1622688E2B133CBE00BCE77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1622688C2B133CBE00BCE77B /* LaunchScreen.storyboard */; };
 		162268992B133CBE00BCE77B /* MVP_PetProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268982B133CBE00BCE77B /* MVP_PetProjectTests.swift */; };
 		162268A32B133CBE00BCE77B /* MVP_PetProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268A22B133CBE00BCE77B /* MVP_PetProjectUITests.swift */; };
 		162268A52B133CBE00BCE77B /* MVP_PetProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268A42B133CBE00BCE77B /* MVP_PetProjectUITestsLaunchTests.swift */; };
+		162268B22B133D6B00BCE77B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268B12B133D6B00BCE77B /* Comment.swift */; };
+		162268B42B133DAA00BCE77B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268B32B133DAA00BCE77B /* MainPresenter.swift */; };
+		162268BB2B134CAC00BCE77B /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268BA2B134CAC00BCE77B /* ModuleBuilder.swift */; };
+		162268BD2B134F7D00BCE77B /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268BC2B134F7D00BCE77B /* MainPresenterTest.swift */; };
+		162268BF2B1356B200BCE77B /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268BE2B1356B200BCE77B /* MainTableViewCell.swift */; };
+		162268C12B1368D500BCE77B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268C02B1368D500BCE77B /* NetworkService.swift */; };
+		162268C32B1371BC00BCE77B /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268C22B1371BC00BCE77B /* DetailPresenter.swift */; };
+		162268C72B13737600BCE77B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268C62B13737600BCE77B /* DetailViewController.swift */; };
+		162268CB2B139C1500BCE77B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162268CA2B139C1400BCE77B /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +47,7 @@
 		1622687E2B133CBC00BCE77B /* MVP-PetProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-PetProject.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		162268812B133CBC00BCE77B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		162268832B133CBC00BCE77B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		162268852B133CBC00BCE77B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		162268882B133CBC00BCE77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		162268852B133CBC00BCE77B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		1622688A2B133CBE00BCE77B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1622688D2B133CBE00BCE77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1622688F2B133CBE00BCE77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		1622689E2B133CBE00BCE77B /* MVP-PetProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVP-PetProjectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		162268A22B133CBE00BCE77B /* MVP_PetProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_PetProjectUITests.swift; sourceTree = "<group>"; };
 		162268A42B133CBE00BCE77B /* MVP_PetProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP_PetProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		162268B12B133D6B00BCE77B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		162268B32B133DAA00BCE77B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		162268BA2B134CAC00BCE77B /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		162268BC2B134F7D00BCE77B /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		162268BE2B1356B200BCE77B /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		162268C02B1368D500BCE77B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		162268C22B1371BC00BCE77B /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		162268C62B13737600BCE77B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		162268CA2B139C1400BCE77B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +117,11 @@
 			children = (
 				162268812B133CBC00BCE77B /* AppDelegate.swift */,
 				162268832B133CBC00BCE77B /* SceneDelegate.swift */,
-				162268852B133CBC00BCE77B /* ViewController.swift */,
-				162268872B133CBC00BCE77B /* Main.storyboard */,
+				162268BA2B134CAC00BCE77B /* ModuleBuilder.swift */,
+				162268C02B1368D500BCE77B /* NetworkService.swift */,
+				162268CA2B139C1400BCE77B /* Router.swift */,
+				162268C42B13734200BCE77B /* Detail */,
+				162268B52B13440700BCE77B /* Main */,
 				1622688A2B133CBE00BCE77B /* Assets.xcassets */,
 				1622688C2B133CBE00BCE77B /* LaunchScreen.storyboard */,
 				1622688F2B133CBE00BCE77B /* Info.plist */,
@@ -113,6 +132,7 @@
 		162268972B133CBE00BCE77B /* MVP-PetProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				162268BC2B134F7D00BCE77B /* MainPresenterTest.swift */,
 				162268982B133CBE00BCE77B /* MVP_PetProjectTests.swift */,
 			);
 			path = "MVP-PetProjectTests";
@@ -125,6 +145,66 @@
 				162268A42B133CBE00BCE77B /* MVP_PetProjectUITestsLaunchTests.swift */,
 			);
 			path = "MVP-PetProjectUITests";
+			sourceTree = "<group>";
+		};
+		162268B52B13440700BCE77B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				162268B92B13446400BCE77B /* View */,
+				162268B72B13441500BCE77B /* Model */,
+				162268B82B13441E00BCE77B /* Presenter */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		162268B72B13441500BCE77B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				162268B12B133D6B00BCE77B /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		162268B82B13441E00BCE77B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				162268B32B133DAA00BCE77B /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		162268B92B13446400BCE77B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				162268852B133CBC00BCE77B /* MainViewController.swift */,
+				162268BE2B1356B200BCE77B /* MainTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		162268C42B13734200BCE77B /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				162268C92B1373B100BCE77B /* View */,
+				162268C52B13736000BCE77B /* Presenter */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		162268C52B13736000BCE77B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				162268C22B1371BC00BCE77B /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		162268C92B1373B100BCE77B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				162268C62B13737600BCE77B /* DetailViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +313,6 @@
 			files = (
 				1622688E2B133CBE00BCE77B /* LaunchScreen.storyboard in Resources */,
 				1622688B2B133CBE00BCE77B /* Assets.xcassets in Resources */,
-				162268892B133CBC00BCE77B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +337,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				162268862B133CBC00BCE77B /* ViewController.swift in Sources */,
+				162268CB2B139C1500BCE77B /* Router.swift in Sources */,
+				162268B42B133DAA00BCE77B /* MainPresenter.swift in Sources */,
+				162268862B133CBC00BCE77B /* MainViewController.swift in Sources */,
+				162268C32B1371BC00BCE77B /* DetailPresenter.swift in Sources */,
+				162268C12B1368D500BCE77B /* NetworkService.swift in Sources */,
 				162268822B133CBC00BCE77B /* AppDelegate.swift in Sources */,
+				162268BF2B1356B200BCE77B /* MainTableViewCell.swift in Sources */,
+				162268B22B133D6B00BCE77B /* Comment.swift in Sources */,
+				162268C72B13737600BCE77B /* DetailViewController.swift in Sources */,
 				162268842B133CBC00BCE77B /* SceneDelegate.swift in Sources */,
+				162268BB2B134CAC00BCE77B /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				162268992B133CBE00BCE77B /* MVP_PetProjectTests.swift in Sources */,
+				162268BD2B134F7D00BCE77B /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +385,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		162268872B133CBC00BCE77B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				162268882B133CBC00BCE77B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1622688C2B133CBE00BCE77B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,7 +527,6 @@
 				INFOPLIST_FILE = "MVP-PetProject/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,7 +554,6 @@
 				INFOPLIST_FILE = "MVP-PetProject/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
